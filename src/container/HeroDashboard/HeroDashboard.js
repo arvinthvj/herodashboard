@@ -42,6 +42,7 @@ import TimeElapsed from "../../components/TimeElapsed/TimeElapsed";
 import storage from "../../utility/storage";
 import { showConfirmAlert } from "../../utility/sweetAlerts/sweetAlerts";
 import moment from "moment";
+import Tbdpopup from "../../components/AlertComponents/tbdAlert";
 
 const queryString = require("query-string");
 const cloneDeep = require("clone-deep");
@@ -185,7 +186,7 @@ class HeroDashboard extends Component {
     this.props.openPopUp(booking);
   };
   openTBDpopupFunction = (booking) => {
-    this.props.openTbdPopup(booking);
+   
   };
   acceptJob = (id) => {
     this.setState({
@@ -606,6 +607,7 @@ export default connect(
 const JobCard = (props) => {
   let booking = cloneDeep(props.booking);
   let [isStopped, setIsStopped] = useState(false);
+  // let [isTbdPopupNeeded , setIsTbdPopupNeeded] = useState(false);
   let [
     manuallyUpdateHoursOnCompletion,
     setManuallyUpdateHoursOnCompletion,
@@ -613,7 +615,7 @@ const JobCard = (props) => {
   let [jobCompletedTime, setJobCompletedTime] = useState(0);
   let [isCardHeightUpdated, setIsCardHeightUpdated] = useState(false);
   let [jobStarted, setJobStarted] = useState(false);
-
+  let [isTbdNeeded , setIsNeeded] =useState(false)
   useEffect(() => {
     setTimeout(() => {
       props.onRefreshList();
@@ -624,7 +626,11 @@ const JobCard = (props) => {
     manuallyUpdateHoursOnCompletion,
     jobStarted,
   ]);
-
+useEffect(() => {
+  if(booking?.tbd == true){
+    setIsNeeded(true)
+  }
+} , [booking])
   if (booking) {
     // let timeElapsed = uses
     let status = booking.status;
@@ -1625,6 +1631,7 @@ const JobCard = (props) => {
                       })}
                     </div>
                   </div>
+                  {isTbdNeeded && isTbdNeeded ? (<Tbdpopup/>) : null}
                   {additionalContent}
                 </article>
               </div>
@@ -1635,7 +1642,7 @@ const JobCard = (props) => {
                   data-toggle="modal"
                   data-target="#alert_seven"
                   className="a_tag_to_button text-danger pull-right font-semi-bold text-uppercase cancel_booking_link"
-                  onClick={() => props.openTBDpopupFunction(booking)}
+                  onClick={() => props.openTbdPopup(booking)}
                 >
                   Cancel booking
                 </button>
