@@ -1,0 +1,63 @@
+.register_type_checkbox::after {
+  border: solid #0e55a5 !important;
+  left: 8px !important;
+  top: 4px !important;
+  width: 7px !important;
+  height: 13px !important;
+  border-width: 0 3px 3px 0 !important;
+  transform: rotate(45deg) !important;
+}
+
+button.btn.theme_btn.theme_outline_secondary.active {
+  background-color: #0e55a5 !important;
+  border-color: #0e55a5 !important;
+  color: #fff !important;
+}
+
+.theme_outline_secondary:focus {
+  color: #455157 !important;
+  background-color: transparent !important;
+  border-color: #455157 !important;
+}
+
+@media screen and (max-width: 375px) {
+  .sign_in_link {
+    font-size: 17px !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .sign_in_link {
+    font-size: 17px;
+  }
+  .sign_up_btn_xs {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sign_in_link {
+    font-size: 16px !important;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .sign_in_link {
+    font-size: 16px !important;
+  }
+} */
+
+@media screen and (max-width: 1480px) {
+  .sign_in_link {
+    font-size: 17px !important;
+  }
+}
+
+.termsAndConditionText {
+  font-size: 16px;
+  padding-left: 35px;
+  margin-top: -2px;
+  display: inline-block;
+  text-align: left;
+}

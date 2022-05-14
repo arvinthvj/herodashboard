@@ -1,0 +1,15 @@
+.about_us_page{
+    display: block !important;
+    padding: 90px 46px !important;
+}
+
+.custom-about-title{
+    color: #0E55A5;
+}
+
+.custom-about-sub-title{
+    /* font-size: 16px; */
+    margin: 0;
+    float: left;
+    font-weight: bold;
+}

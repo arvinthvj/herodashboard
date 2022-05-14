@@ -1,0 +1,24 @@
+.react-tel-input .form-control.input_modify.input_modify_lg.custom_phone_input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EBEBEB;
+}
+
+.flag-dropdown{
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.react-tel-input .selected-flag{
+    padding: 0 0 0 16px !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag{
+    border: 1px solid #EBEBEB;
+    border-right: none;
+}
+
+.react-tel-input .flag-dropdown:hover .selected-flag{
+    border: 1px solid #EBEBEB;
+    border-right: none;
+}

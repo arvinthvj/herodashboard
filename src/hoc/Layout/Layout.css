@@ -1,0 +1,148 @@
+header .navbar.navbar-light a.navbar-brand img {
+  width: 100% !important;
+}
+footer .navbar-brand img {
+  width: 100% !important;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky_inactive_account {
+  position: fixed;
+  top: 22px;
+  width: 100%;
+  margin-top: 65px;
+  z-index: 2;
+  min-height: 30px;
+}
+
+.content_inactive_account {
+  color: #fff !important;
+  font-size: 16px;
+  margin-top: 11px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.inactive_stripe_text a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.dropdown_copy_btn {
+  padding: 5px !important;
+  width: 60px !important;
+  font-size: 11px !important;
+}
+
+.hover_icon {
+  display: none;
+}
+
+.dropdown_copy_btn:hover .hover_icon {
+  display: inline-block;
+}
+
+.dropdown_copy_btn:focus .hover_icon {
+  display: inline-block;
+}
+
+.dropdown_copy_btn:active .hover_icon {
+  display: inline-block;
+}
+
+.dropdown_copy_btn:hover .normal_icon {
+  display: none;
+}
+
+.mobile_terms_and_privacy {
+  display: none !important;
+}
+.dropdown_copy_btn:focus .normal_icon {
+  display: none;
+}
+
+.dropdown_copy_btn:active .normal_icon {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  .profile_dropdown .dropdown-menu {
+    min-width: 260px !important;
+    left: -90px !important;
+  }
+
+  .mobile_terms_and_privacy {
+    display: inline-block !important;
+  }
+
+  .normal_terms_and_privacy {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sticky_inactive_account {
+    margin-top: 50px !important;
+  }
+}
+
+footer.home_footer {
+  line-height: 20px;
+}
+
+.inactive_stripe_text {
+  color: #fff !important;
+}
+.stripe_activation_banner {
+  background-color: #eb2329 !important;
+  border-color: #eb2329 !important;
+}
+
+.stripe_banner_activated {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 575px) {
+  .avh_filter_cont.stripe_banner_activated {
+    margin-top: 60px !important;
+  }
+}
+
+.blank_dv {
+  display: block;
+  min-width: 203px;
+  height: 40.59px;
+}
+
+.verification_banner_enabled .titleAbslt {
+  top: 35px;
+}
+.verification_banner_enabled .stripe_banner_activated {
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 991px) {
+  .sticky_inactive_account {
+    margin-top: 42px!important;
+  }
+  .content_inactive_account {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width:555px){
+  .content_inactive_account {
+    padding: 0 10px;
+    line-height: 23px;
+  }
+  .verification_banner_enabled .titleAbslt {
+    top: 55px;
+  } 
+}

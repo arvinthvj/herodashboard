@@ -1,0 +1,23 @@
+.brand-pillars-about{
+    /* display: block !important; */
+    padding: 90px 46px !important;
+}
+
+.brand-pillars-about .art_hero_text{
+    max-width: 100% !important;
+}
+
+@media screen and (max-width: 767px){
+    .brand-pillars-about .art_hero_text{
+        margin-top: 0 !important;
+    }
+    .brand-pillars-about{
+        padding: 58px 10px 102px 10px !important;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .brand-pillars-about .art_hero_text{
+        margin-top: 0 !important;
+    }
+}

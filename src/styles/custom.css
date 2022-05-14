@@ -1,0 +1,762 @@
+/* ValidationMessage Edited by Shravan 21-12-2019 */
+
+.error_message {
+  color: rgb(221, 39, 38);
+  font-size: 13px;
+}
+
+style .error_class {
+  border-color: rgb(240, 77, 83);
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+
+.disable_class {
+  background-color: #8080805e !important;
+}
+
+/* Radio Button Color for FavHeros  */
+
+.btn_rado_container input:checked ~ .btn_rado_checkmark {
+  background-color: #fdcb35 !important;
+}
+
+/* Date Picker Css */
+
+.react-datepicker__header--time {
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 63px;
+  line-height: 50px;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list {
+  overflow-x: hidden !important;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item {
+  height: 30px;
+  padding: 15px 9px;
+  white-space: nowrap;
+  font-size: 12px;
+  margin: 0;
+  width: 100%;
+  /* display: inline-block; */
+}
+
+.a_tag_to_button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.a_tag_to_button:focus {
+  outline: none;
+}
+
+.pointer_cursor {
+  cursor: pointer;
+}
+
+.dateplaceholder::placeholder {
+  color: #333333 !important;
+}
+
+.dateplaceholder::-moz-placeholder {
+  color: #000 !important;
+}
+
+/* payment_detail_info section start here */
+
+.payment_detail_info {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  border: 1px solid #ebebeb;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.payment_detail_info .left_side_payment {
+  width: 100%;
+  display: block;
+}
+
+.left_side_payment .h5_title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #141414;
+  text-transform: inherit;
+  margin-bottom: 0px !important;
+}
+
+.card_title_info {
+  margin: 0;
+  font-size: 14px;
+  color: #141414;
+  text-transform: capitalize;
+  font-weight: 100;
+  display: inline-block;
+  /* margin-top: 7px; */
+}
+
+.card_info_anchor {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px;
+  display: inline-block;
+  max-width: 100%;
+  color: #172b4d;
+  text-decoration-line: underline;
+  float: right;
+  transition: 0.2s;
+}
+
+.card_info_anchor:hover {
+  text-decoration-line: underline;
+  transition: 0.2s;
+}
+
+.card_body {
+  margin-top: 5px;
+  width: 100%;
+  display: block;
+}
+
+/* paymant_detail_info section end here */
+
+/* header .navbar.navbar-light ul.navbar-nav .nav-item .nav-link {
+  font-size: 12px !important;
+}
+
+
+/* Custom Review CheckBox */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.red-heart-checkbox {
+  visibility: hidden;
+}
+
+.red-heart-checkbox + label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 15px;
+  transition: all 0.2s;
+}
+
+.red-heart-checkbox:checked + label:before {
+  content: "";
+  color: #f00;
+}
+
+.red-heart-checkbox + label:before {
+  width: 31.5px;
+  height: 30px;
+  content: "";
+  position: absolute;
+  margin-left: -31px;
+  margin-top: -3px;
+  font-family: FontAwesome;
+  font-size: 20px;
+  content: "";
+  transition: all 0.3s;
+  color: #888;
+}
+
+.red-heart-checkbox + label:hover:before {
+  transform: scale(1.2);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Commented by Shravan */
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} */
+
+.control-group {
+  margin: 3px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  font-family: Open Sans, Helvetica;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Active Red color */
+
+.active_red {
+  background-color: #db3732 !important;
+  border-color: #db3732 !important;
+  color: #fff !important;
+}
+
+/* .avh_action_list .action_link.active {
+  background-color: #db3732 !important;
+  border-color: rgba(219, 56, 50, 0.856) !important;
+  color: #fff !important;
+} */
+
+/* rate and review star UI */
+
+.Rating {
+  font-size: 22px;
+}
+
+.avh_card_user_info .card-footer button {
+  font-size: 12px;
+}
+
+.asap_text_color {
+  color: white !important;
+}
+
+/* Date Picket border */
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box {
+  border-right: 1px solid #aeaeae;
+}
+
+header
+  .navbar.navbar-light
+  ul.navbar-nav.justify-content-end.left_navbar_onboarding {
+  width: 100% !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+  display: none !important;
+}
+
+/* Booking Other Color */
+
+.items_collection label.btn_check.other_active {
+  background-color: #fdcb35 !important;
+  border-color: #fdcb35 !important;
+  color: #fff;
+}
+
+label.btn_check.active .other_title {
+  color: #141414 !important;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+/* toolTip */
+
+.toolTipInfoClass {
+  margin-left: 5px;
+  margin-bottom: 2px;
+  width: 12px;
+}
+
+/* total amount */
+
+.total_amount_received_color {
+  color: #141414 !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+  display: none !important;
+}
+
+.empty_img_wrp.transaction_history_empty_wrp {
+  top: 40vh !important;
+}
+
+
+/* Location and review screen */
+
+@media screen and (max-width: 1480px) {
+  .limiter .inner_form {
+    padding: 18px 30px !important;
+  }
+}
+
+/* Review and Confirm */
+
+.favHeroImageSpan {
+  height: 35px;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  width: 35px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.favHeroImage {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.booking_type_on_job_card {
+  color: rgb(219, 55, 50) !important;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+/* Job unresolved css */
+
+.avh_check_container:hover input ~ .avh_check_checkmark {
+  background-color: transparent !important;
+  border-color: #fdcb35 !important;
+}
+
+.avh_check_container .avh_check_checkmark:after {
+  background: #fdcb35 !important;
+}
+
+.avh_check_container .avh_check_checkmark:after {
+  background: #fdcb35 !important;
+}
+
+.avh_check_container input:checked ~ .avh_check_checkmark {
+  background-color: transparent;
+  border-color: #fdcb35 !important;
+}
+
+/* Resolve Ticket */
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 110px;
+  }
+}
+
+@media screen and (device-width: 411px) and (device-height: 731px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 92px;
+  }
+}
+
+@media screen and (device-width: 411px) and (device-height: 823px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 92px;
+  }
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 110px;
+  }
+}
+
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 110px;
+  }
+}
+
+@media screen and (device-width: 414px) and (device-height: 736px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 93px;
+  }
+}
+
+@media screen and (device-width: 375px) and (device-height: 812px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 111px;
+  }
+}
+
+@media screen and (device-width: 768px) and (device-height: 1024px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 95px;
+  }
+}
+
+@media screen and (device-width: 1024px) and (device-height: 1366px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 95px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 95px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .resolveTicketModal {
+    position: absolute;
+    right: 50px;
+    top: 115px;
+  }
+}
+
+.conveniceFeeInputField {
+  /* max-width: 165px; */
+  padding: 6px 12px 6px 28px !important;
+  width: 100%;
+  background-image: url(/images/icons/icn_dollar_grey.png);
+  background-repeat: no-repeat;
+  padding-left: 28px;
+  background-position: 10px;
+  background-size: 12px;
+}
+
+.limiter .limiter_heading_wrp h5 a {
+  font-size: 18px;
+}
+
+.complete_job_checkmark_container:hover input ~ .complete_job_checkmark {
+  border-color: #000 !important;
+}
+
+.complete_job_checkmark_container input:checked ~ .complete_job_checkmark {
+  border-color: #000 !important;
+}
+
+.avh_total_cost_font_size_14 {
+  font-size: 14px !important;
+}
+
+.password_fix {
+  -webkit-user-select: text;
+  /* Chrome, Opera, Safari */
+  -moz-user-select: text;
+  /* Firefox 2+ */
+  -ms-user-select: text;
+  /* IE 10+ */
+  user-select: text;
+  /* Standard syntax */
+}
+
+.text_empty_payments {
+  -webkit-transform: translateY(190px);
+  -moz-transform: translateY(190px);
+  -o-transform: translateY(190px);
+  -ms-transform: translateY(190px);
+  transform: translateY(190px);
+}
+
+.img_empty_payments {
+  margin-top: -10px;
+  width: 155px;
+}
+
+.client_profile_pic_bgcolor {
+  background-color: black;
+}
+
+.__react_component_tooltip {
+  width: 250px;
+}
+
+.empty_items_text {
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin: 22px 0;
+}
+
+.empty_dashboard_section {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* reschedule modal */
+
+@media screen and (min-width: 576px) {
+  .avh_modal_sm400.modal-sm {
+    max-width: 450px !important;
+  }
+}
+
+.first_letter_caps {
+  text-transform: capitalize;
+}
+
+.avh_content {
+  padding: 20px !important;
+}
+
+.informationClass {
+  color: rgb(219, 55, 50);
+  font-size: 13px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.pointerClass {
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 3px;
+}
+
+.datePointerClass {
+  cursor: pointer;
+}
+
+.removeBlinker {
+  color: transparent !important;
+}
+
+.reset_password_form_container {
+  padding: 15px;
+}
+
+.reset_password_form_container label.mobile_top.label_more {
+  margin-bottom: 0;
+}
+
+.reset_password_form_container
+  .input_pro_edit.input_proPass_edit
+  .labelled-input
+  label {
+  width: 32%;
+}
+
+@media screen and (max-width: 899px) {
+  .reset_password_form_container label.mobile_top.label_more {
+    top: 18px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .reset_password_form_container label.mobile_top.label_more {
+    top: 18px;
+  }
+  .reset_password_form_container label.mobile_top.label_more.label_more_conf {
+    top: 10px;
+  }
+  .reset_password_form_container
+    .input_pro_edit.input_proPass_edit
+    .labelled-input
+    label {
+    width: 33%;
+  }
+  #business-card .avh_content {
+    margin: 0 !important;
+  }
+}
+
+.hero_business_card {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em #272727bf;
+}
+
+.btn_group {
+  margin-bottom: 15px !important;
+}
+
+.tooltip-custom {
+  font-weight: bold;
+  border-radius: 2rem !important;
+  opacity: 100 !important;
+}
+
+.red_text {
+  color: #eb2329 !important;
+}
+
+.card-header p {
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.rate_hero {
+  font-size: 12px !important;
+  cursor: pointer;
+}
+
+.avh_card_user_info .card-footer button {
+  font-size: 11px !important;
+}
+
+.avh_card_user_info .user_info_art .para_clr {
+  color: #455157 !important;
+}
+
+.jobCard.avh_card_user_info .theme_outline_secondary:hover .para_clr {
+  color: #ffffff !important;
+}
+
+.theme_outline_secondary:hover,
+.theme_outline_secondary:focus,
+.theme_outline_secondary:active {
+  background-color: #455157 !important;
+  border-color: #455157 !important;
+}
+
+.text-yellow {
+  color: #fecb2f !important;
+}
+
+.theme_badge.badge-warning {
+  border: 1px solid #45515773 !important;
+}
+
+.notification-warning,
+.notification-warning .timer {
+  background-color: #455157 !important;
+}
+
+.notification-warning {
+  border-left: 8px solid #2e373b !important;
+}
+
+.notification-warning .notification-close {
+  background-color: #455157 !important;
+}
+
+.border-style {
+  border-bottom: 2px solid rgba(51, 51, 51, 0.3) !important;
+}
+
+.labelled-input .form-control:not(:first-child) {
+  border-top: none;
+}
+
+.input_pro_edit .labelled-input .form-control:active,
+.input_pro_edit .labelled-input .form-control:focus {
+  border: 1px solid #241e1e !important;
+  box-shadow: none;
+}
+
+.labelled-input:first-child .form-control {
+  border-top: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.swal2-styled:focus {
+  box-shadow: inherit !important;
+}
+
+#password_eye_icon {
+  width: 84px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #e2e3e3;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  border-color: #e2e3e3;
+}
+
+.react-tel-input .form-control.input_modify.input_modify_lg.custom_phone_input {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  height: 48px;
+}
+
+@media screen and (max-width: 1480px) {
+  .react-tel-input
+    .form-control.input_modify.input_modify_lg.custom_phone_input {
+    height: 38px;
+  }
+}
+
+.limiter .container-login100 .wrap-login100 .login100-form h1 {
+  color: #eb2329;
+}
+
+.theme_checkbox_cont input:checked ~ .theme_checkmark {
+  border-color: black;
+}
+
+.register_type_checkbox::after {
+  border: solid black !important;
+  border-width: 0 3px 3px 0 !important;
+}
+
+.theme_checkbox_cont .theme_checkmark:after {
+  border: solid black !important;
+  border-width: 0 3px 3px 0 !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.job_description {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.jobCard{
+  -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.jobCard .__react_component_tooltip.place-top{
+  margin-top: 0;
+}

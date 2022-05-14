@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on 'date'
+      - npm run build:$ENV
+  post_build:
+    commands:
+      # copy the contents of /build to S3
+       - aws s3 cp --recursive --acl public-read ./build s3://$BUCKET_NAME/ 
+       - aws cloudfront create-invalidation --distribution-id $DIST_ID --paths '/*'
+       - aws cloudfront create-invalidation --distribution-id $DIST_ID2 --paths '/*'
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build

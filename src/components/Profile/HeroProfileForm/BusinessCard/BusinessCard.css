@@ -1,0 +1,9 @@
+.book_this_hero_btn {
+  text-decoration: underline;
+  font-weight: 700 !important;
+  color: #db3732 !important;
+}
+
+.hero_business_card {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 1em #ccc;
+}

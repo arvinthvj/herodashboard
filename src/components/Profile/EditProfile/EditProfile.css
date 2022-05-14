@@ -1,0 +1,20 @@
+.input_pro_edit .labelled-input .form-control.top-input.top-input-error{
+    border-top-color: rgb(240, 77, 83) !important;
+}
+.input_pro_edit .labelled-input .form-control.top-input.top-input-error:focus{
+    border-top-color: #1D4995 !important;
+}
+.react-tel-input .form-control.edit-profile-phone-input{
+    width: 100%;
+}
+
+.react-tel-input .flag-dropdown:focus .selected-flag, .react-tel-input .flag-dropdown:hover .selected-flag {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+@media screen and (max-width: 991px){
+    .hero_not_activated_profile{
+      margin-top: 30px !important;
+    }
+}

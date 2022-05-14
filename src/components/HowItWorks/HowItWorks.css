@@ -1,0 +1,30 @@
+.how_it_works_page{
+    /* display: block !important; */
+    padding: 90px 46px !important;
+}
+
+.custom-about-sub-title{
+    /* font-size: 16px; */
+    margin: 0;
+    float: left;
+    font-weight: bold;
+}
+
+.how_it_works_page .art_hero_text{
+    max-width: 100% !important;
+}
+
+@media screen and (max-width: 767px){
+    .how_it_works_page .art_hero_text{
+        margin-top: 0 !important;
+    }
+    .how_it_works_page{
+        padding: 58px 10px 102px 10px !important;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .how_it_works_page .art_hero_text{
+        margin-top: 0 !important;
+    }
+}

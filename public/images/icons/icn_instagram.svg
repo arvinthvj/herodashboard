@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <g id="Group_7" data-name="Group 7" transform="translate(-245 -355)">
+    <g id="icn_instagram" transform="translate(245 355)">
+      <g id="Group_2" data-name="Group 2">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_1" data-name="Path 1" d="M352,0H160A160.017,160.017,0,0,0,0,160V352A160.017,160.017,0,0,0,160,512H352A160.017,160.017,0,0,0,512,352V160A160.017,160.017,0,0,0,352,0ZM464,352A112.123,112.123,0,0,1,352,464H160A112.123,112.123,0,0,1,48,352V160A112.123,112.123,0,0,1,160,48H352A112.123,112.123,0,0,1,464,160Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_4" data-name="Group 4">
+        <g id="Group_3" data-name="Group 3">
+          <path id="Path_2" data-name="Path 2" d="M256,128A128,128,0,1,0,384,256,128.006,128.006,0,0,0,256,128Zm0,208a80,80,0,1,1,80-80A80.111,80.111,0,0,1,256,336Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_6" data-name="Group 6">
+        <g id="Group_5" data-name="Group 5">
+          <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.056" cy="17.056" r="17.056" transform="translate(376.544 101.344)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

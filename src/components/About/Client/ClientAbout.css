@@ -1,0 +1,23 @@
+.client-about{
+    /* display: block !important; */
+    padding: 90px 46px !important;
+}
+
+.client-about .art_hero_text{
+    max-width: 100% !important;
+}
+
+@media screen and (max-width: 767px){
+    .client-about .art_hero_text{
+        margin-top: 0 !important;
+    }
+    .client-about{
+        padding: 58px 10px 102px 10px !important;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .client-about .art_hero_text{
+        margin-top: 0 !important;
+    }
+}

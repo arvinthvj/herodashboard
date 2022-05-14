@@ -1,0 +1,152 @@
+.coverage_wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.coverage-align-items-stretch{
+    -webkit-box-align: stretch !important;
+    align-items: stretch !important;
+}
+
+.coverage-d-flex{
+    display: flex !important;
+}
+
+#coverage_sidebar{
+    min-width: 270px;
+    max-width: 270px;
+    background: #241e1e;
+    color: #fff;
+    transition: all 0.3s;
+    height: fit-content;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#coverage_sidebar .custom-menu{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: -20px;
+    transition: 0.3s;
+}
+
+#coverage_sidebar .custom-menu .btn.btn-primary{
+    background: transparent;
+    border-color: transparent;
+}
+
+#coverage_sidebar .custom-menu .btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#coverage_sidebar .custom-menu .btn i{
+    margin-right: -40px;
+    font-size: 14px;
+}
+
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    margin: -1px;
+}
+
+#coverage_sidebar .custom-menu .btn.btn-primary:after{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    transform: rotate(45deg);
+    background: #241e1e;
+    border-radius: 10px;
+}
+
+.fa-bars:before{
+    content: "\f0c9";
+}
+
+#coverage_sidebar h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#coverage_sidebar h1 .logo{
+    color: #fff;
+}
+
+#coverage_sidebar h1 .logo span{
+    font-size: 14px;
+    color: #fff;
+    display: block;
+}
+
+#coverage_sidebar ul.components{
+    padding: 0;
+}
+
+#coverage_sidebar ul li{
+    font-size: 16px;
+}
+
+#coverage_sidebar ul li.active > a{
+    background: transparent;
+    color: #fff;
+}
+
+#coverage_sidebar ul li a{
+    padding: 10px 0;
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#coverage_sidebar ul li a span{
+    color: #FECB2F;
+}
+
+#coverage_sidebar.active {
+    margin-left: -270px;
+}
+
+#coverage_content{
+    width: 100%;
+    height: 100%;
+}
+
+#coverage_places_text:hover{
+    color: #FECB2F;
+}
+
+@media (max-width: 991.98px){
+    #sidebar.active{
+        margin-left: 0;
+    }
+    #sidebar{
+        margin-left: -270px;
+    }
+}

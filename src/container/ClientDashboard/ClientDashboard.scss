@@ -1,0 +1,27 @@
+#fixed_hero_button {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+}
+
+.hero_completed_title {
+  font-size: 13px;
+}
+
+.jobCard .client_dashboard_custom_tooltip{
+  width: 190px;
+  pointer-events: initial;
+    display: block;
+    max-height: 150px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+ line-height: 16px;
+}
+
+/* width */
+.jobCard .client_dashboard_custom_tooltip::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}

@@ -1,0 +1,78 @@
+//colors
+$white:    #ffffff !default;
+$white_O75:  rgba(255,255,255,0.75) !default;
+$black:    #000000 !default;
+$brand-primary: #eb2329 !default;
+/*$brand-primary: #0E55A5 !default;*/
+$brand-primary-link: #eb2329 !default;
+$brand-primary-link-hover: darken($brand-primary-link, 10%) !default;;
+$brand-secondary: #455157 !default;
+$brand-yellow: #ffcc06;
+$brand-secondary-65: rgba(20,20,20,0.65) !default;
+$brand-danger: #DB3732 !default;
+$link-danger: #E8242A !default;
+$theme_body_clr: #31323C !default;
+$blue-dark700: #172B4D;
+$blue-dark600: #3E4A66;
+// $input-border-color: #c1c1c2;
+$input-border-color: #EBEBEB;
+$icn_fb_bg: #415994;
+$icn_google_bg: #5183EC;
+$gray_bg_200: #F0F5FA;
+$gray_bg_600: #AEB8CB;
+$gray_bg_700: #656262;
+$gray_bg_850: #646361;
+$gray_bg_9000: #455157;
+$gray_bg_o65: rgba(174,184,203,0.65);
+$gray_bg_o45: rgb(174,184,203);
+$input_field_border: #707070;
+$footer_border: #798397;
+$footer_border_o65: rgba(121,131,151,0.65);
+$brand-primary-900: #233047;
+$input-placeholder: #FFFEFE;
+$gray_750_1: #9fa1a1;
+$gray_750: #2b4452;
+$gray_750_o30: rgba(51,51,51,0.30);
+$black_o10: rgba(0,0,0,0.10);
+$white_100: #F2FAFF;
+$white-200: #DBE0DF;
+$white-dark-1: #f3f6f9;
+$body-bg: #FCFCFC;
+$link: #3E4A66;
+$teal-100:#10CFA6;
+$teal-800:#10CFA6;
+$danger_100:rgba(232, 36, 42, 0.14);
+$gray_bg_800:rgba(174, 184, 203, .03);
+$gray_bg_900:rgba(174, 184, 203, 0.30);
+$black_bg_o16:rgba(0,0,0,0.16);
+$black_bg_o5:rgba(0,0,0,0.05);
+$black_bg_o2:rgba(0,0,0,0.02);
+$black_bg_o1:rgba(0,0,0,0.1);
+$card_bg: #f8f8f8;
+$yellow-800: #D8B715;
+$card-border-200: #DBDBDB;
+$avh_tk_name: #293652;
+$header_bg: #241E1E;
+$yellow_bg: #ffcc06;
+$blue_dark: #0a3d76;
+$blue-dark-1: #466fad;
+$black-2020: #20201f;
+$black-darkest: #20201f;
+$white-f7: #f7f7f7;
+$gray-100: #ccc;
+$gray-400: #eee;
+$gray-dark-1: #5c6060;               
+$gray-dark-2: #494c4c;    
+$gray-dark-3: #A6ABAB;           
+$gray-dark-4: #e6e4e4;           
+$black-150: rgba(0,0,0,.15);
+// applied colors:
+$link-color:       $brand-primary !default;
+$link-hover-color: darken($link-color, 10%) !default;
+$brand-primary-hover: darken($brand-primary, 10%) !default;
+$brand-secondary-hover: darken($brand-secondary, 10%) !default;
+$brand-danger-hover: darken($brand-danger, 10%) !default;
+$brand-yellow-hover: darken($brand-yellow, 10%) !default;
+
+
+

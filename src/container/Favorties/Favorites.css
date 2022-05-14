@@ -1,0 +1,18 @@
+.delete_favourite:disabled{
+    background-color: rgb(158, 39, 43);
+    border-color: rgb(158, 39, 43);
+}
+.delete_favourite:disabled:hover{
+    background-color: rgb(158, 39, 43);
+    border-color: rgb(158, 39, 43);
+}
+
+.empty_fav_hero_block{
+    text-align: center;
+    padding: 20px 15px;
+    margin: 15px;
+    transition: all 1s ease;
+}
+.empty_fav_hero_img{
+    width: 30%;
+}
