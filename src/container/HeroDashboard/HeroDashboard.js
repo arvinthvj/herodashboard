@@ -58,6 +58,7 @@ class HeroDashboard extends Component {
       isLoading: true,
       jobs: [],
       refreshList: false,
+      tbdThere : false,
     };
   }
 
@@ -186,7 +187,7 @@ class HeroDashboard extends Component {
     this.props.openPopUp(booking);
   };
   openTBDpopupFunction = (booking) => {
-   
+    this.props.openTbdPopup(booking) 
   };
   acceptJob = (id) => {
     this.setState({
@@ -469,6 +470,7 @@ class HeroDashboard extends Component {
             miscellaneousCostClicked={this.miscellaneousCostClicked}
             acceptReschduleJob={this.acceptReschduleJob}
             openCancelPopup={this.openCancelPopup}
+            openTBDpopupFunction = {this.openTBDpopupFunction}
             onMyWay={this.onMyWay}
             startJob={this.startJob}
             completeJob={this.openCompletePopup}
@@ -524,6 +526,7 @@ class HeroDashboard extends Component {
           {this.props.openCompletePopup && (
             <CompleteJob minutes_worked={this.state.minutes_worked} />
           )}
+          {this.props.isTbdPopup &&this.props.isTbdPopup ?  <Tbdpopup/>: null }
           {this.props.isCancelPopupTrue ? <CancelResonJobOrBooking /> : null}
           {this.props.isReschedulePopupTrue ? (
             <RescheduleBookingOrJob
@@ -565,6 +568,7 @@ const mapStateToProps = (state) => ({
   isAcceptBookingLoading: state.clientOrHeroReducer.isAcceptBookingLoading,
   bookingList: state.clientOrHeroReducer.bookingList,
   openCompletePopup: state.clientOrHeroReducer.openCompletePopup,
+  isTbdPopup : state.clientOrHeroReducer.isTbdPopup,
   isCancelPopupTrue: state.clientOrHeroReducer.isCancelPopupTrue,
   isReschedulePopupTrue: state.clientOrHeroReducer.isReschedulePopupTrue,
   isMiscellaneousPopupTrue: state.clientOrHeroReducer.isMiscellaneousPopupTrue,
@@ -626,11 +630,11 @@ const JobCard = (props) => {
     manuallyUpdateHoursOnCompletion,
     jobStarted,
   ]);
-useEffect(() => {
-  if(booking?.tbd == true){
-    setIsNeeded(true)
-  }
-} , [booking])
+// useEffect(() => {
+//   if(booking?.tbd == true){
+//     setIsNeeded(true)
+//   }
+// } , [booking])
   if (booking) {
     // let timeElapsed = uses
     let status = booking.status;
@@ -808,12 +812,24 @@ useEffect(() => {
 
                     <button
                       type="button"
+                      data-toggle="modal"
+                      data-target="#alert_seven"
+                  // className="a_tag_to_button text-danger pull-right font-semi-bold text-uppercase cancel_booking_link"
                       onClick={() => {
-                        props.onMyWay(
-                          booking.id,
-                          formicProps.values.arriving_in
-                        );
-                      }}
+                        booking.tbd = true;
+                        props.openTbdPopup(booking);
+                        // props.onMyWay(
+                        //   booking.id,
+                        //   formicProps.values.arriving_in
+                        // );
+                      }
+                       
+                        // props.openTbdPopup();
+                        // props.onMyWay(
+                        //   booking.id,
+                        //   formicProps.values.arriving_in
+                        // );
+                      }
                       className="theme_btn theme_primary btn_m125"
                     >
                       {props.state.updateJobLoading &&
@@ -1631,7 +1647,6 @@ useEffect(() => {
                       })}
                     </div>
                   </div>
-                  {isTbdNeeded && isTbdNeeded ? (<Tbdpopup/>) : null}
                   {additionalContent}
                 </article>
               </div>

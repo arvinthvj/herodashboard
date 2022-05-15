@@ -45,11 +45,11 @@ const Tbdpopup = (props) => {
         dispatch(actions.closePopUp());
     }
 
-    if (user.role === roles.service_provider) {
-        ReasonList = cloneDeep(settings.cancellation_reasons.hero);
-    } else {
-        ReasonList = cloneDeep(settings.cancellation_reasons.client);
-    }
+    // if (user.role === roles.service_provider) {
+    //     ReasonList = cloneDeep(settings.cancellation_reasons.hero);
+    // } else {
+    //     ReasonList = cloneDeep(settings.cancellation_reasons.client);
+    // }
 
     const bookingCancelClicked = (values) => {
         setIsLoading(true);
