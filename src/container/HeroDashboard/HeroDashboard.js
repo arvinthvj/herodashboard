@@ -497,6 +497,9 @@ class HeroDashboard extends Component {
         </div>
       );
     }
+    
+   
+    
     return (
       <section className="home_hero">
         <div className="container">
@@ -526,7 +529,7 @@ class HeroDashboard extends Component {
           {this.props.openCompletePopup && (
             <CompleteJob minutes_worked={this.state.minutes_worked} />
           )}
-          {this.props.isTbdPopup &&this.props.isTbdPopup ?  <Tbdpopup/>: null }
+          {  <Tbdpopup/> }
           {this.props.isCancelPopupTrue ? <CancelResonJobOrBooking /> : null}
           {this.props.isReschedulePopupTrue ? (
             <RescheduleBookingOrJob
@@ -620,6 +623,7 @@ const JobCard = (props) => {
   let [isCardHeightUpdated, setIsCardHeightUpdated] = useState(false);
   let [jobStarted, setJobStarted] = useState(false);
   let [isTbdNeeded , setIsNeeded] =useState(false)
+  debugger
   useEffect(() => {
     setTimeout(() => {
       props.onRefreshList();
@@ -670,7 +674,17 @@ const JobCard = (props) => {
         title = "CLIENT UPDATED JOB TIME";
       }
     }
+    if(props.booking.tbd && props.booking.tbd == true){
+      // setTimeout(() => {
+        document.getElementById("alert_seven").classList.add("show");
+        document.getElementById("alert_seven").removeAttribute("aria-hidden");
+        document.getElementById("alert_seven").setAttribute("aria-modal" , true);
+        document.getElementById("alert_seven").style =  `padding-right: 18.9884px;
+                                                         display: block;
+                                                         background-color: rgba(22, 35, 42, 0.4);`
 
+      // }, 100);
+    }
     let subtitle = statusData.sub_title;
     let isCancelBookingAllowed = statusData.cancellation_allowed;
     let call_allowed = statusData.call_allowed;
@@ -812,16 +826,14 @@ const JobCard = (props) => {
 
                     <button
                       type="button"
-                      data-toggle="modal"
-                      data-target="#alert_seven"
                   // className="a_tag_to_button text-danger pull-right font-semi-bold text-uppercase cancel_booking_link"
                       onClick={() => {
-                        booking.tbd = true;
-                        props.openTbdPopup(booking);
-                        // props.onMyWay(
-                        //   booking.id,
-                        //   formicProps.values.arriving_in
-                        // );
+                        // props.openTbdPopup(booking);
+                        debugger
+                        props.onMyWay(
+                          booking.id,
+                          formicProps.values.arriving_in
+                        );
                       }
                        
                         // props.openTbdPopup();
