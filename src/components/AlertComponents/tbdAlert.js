@@ -43,6 +43,8 @@ const Tbdpopup = (props) => {
 
     const closePopUp = () => {
         dispatch(actions.closePopUp());
+        // document.getElementById("alert_seven").classList.remove("show");
+        window.$("#alert_tbd").modal("toggle");
     }
 
     // if (user.role === roles.service_provider) {
@@ -66,7 +68,7 @@ const Tbdpopup = (props) => {
     }
 
     return (
-        <div data-backdrop="static" data-keyboard="false" className="modal fade bd-example-modal-sm avh_modal" id="alert_seven" tabindex="-1" role="dialog" aria-labelledby="alert_seven" aria-hidden="true">
+        <div data-backdrop="static" data-keyboard="false" className="modal fade bd-example-modal-sm avh_modal" id="alert_tbd" tabindex="-1" role="dialog" aria-labelledby="alert_seven" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered modal-sm avh_modal_sm400" role="document">
 
                

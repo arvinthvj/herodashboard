@@ -20,7 +20,7 @@ const initialState = {
     isViewMiscellaneousPopupTrue: false,
     isRateAndReviewTrue: false,
     openCompletePopup: false,
-
+    isTbdPopup : false,
     updateBookingObject: null,
     isLoading: false,
     isCardLoading: false,

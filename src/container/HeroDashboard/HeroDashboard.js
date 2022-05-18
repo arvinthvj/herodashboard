@@ -674,16 +674,9 @@ const JobCard = (props) => {
         title = "CLIENT UPDATED JOB TIME";
       }
     }
-    if(props.booking.tbd && props.booking.tbd == true){
-      // setTimeout(() => {
-        document.getElementById("alert_seven").classList.add("show");
-        document.getElementById("alert_seven").removeAttribute("aria-hidden");
-        document.getElementById("alert_seven").setAttribute("aria-modal" , true);
-        document.getElementById("alert_seven").style =  `padding-right: 18.9884px;
-                                                         display: block;
-                                                         background-color: rgba(22, 35, 42, 0.4);`
-
-      // }, 100);
+    if(props.booking.tbd && props.booking.tbd == true && isTbdNeeded == false && props.location.search && props.location.search.includes('active')){
+      setIsNeeded(true);
+      window.$("#alert_tbd").modal("toggle");
     }
     let subtitle = statusData.sub_title;
     let isCancelBookingAllowed = statusData.cancellation_allowed;
@@ -828,8 +821,6 @@ const JobCard = (props) => {
                       type="button"
                   // className="a_tag_to_button text-danger pull-right font-semi-bold text-uppercase cancel_booking_link"
                       onClick={() => {
-                        // props.openTbdPopup(booking);
-                        debugger
                         props.onMyWay(
                           booking.id,
                           formicProps.values.arriving_in
@@ -1669,7 +1660,7 @@ const JobCard = (props) => {
                   data-toggle="modal"
                   data-target="#alert_seven"
                   className="a_tag_to_button text-danger pull-right font-semi-bold text-uppercase cancel_booking_link"
-                  onClick={() => props.openTbdPopup(booking)}
+                  onClick={() => props.openCancelPopup(booking)}
                 >
                   Cancel booking
                 </button>
