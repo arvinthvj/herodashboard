@@ -634,6 +634,13 @@ const JobCard = (props) => {
     manuallyUpdateHoursOnCompletion,
     jobStarted,
   ]);
+  useEffect(() => {
+    debugger
+    if(props.booking.tbd && props.booking.tbd == true && isTbdNeeded == false && props.booking.status && props.booking.status.includes('on_the_way') && props.state.updateJobLoading == false){
+      setIsNeeded(true);
+        window.$("#alert_tbd").modal("toggle");
+      }
+  },[props.booking.tbd,isTbdNeeded, props.booking.status])
 // useEffect(() => {
 //   if(booking?.tbd == true){
 //     setIsNeeded(true)
@@ -674,10 +681,7 @@ const JobCard = (props) => {
         title = "CLIENT UPDATED JOB TIME";
       }
     }
-    if(props.booking.tbd && props.booking.tbd == true && isTbdNeeded == false && props.location.search && props.location.search.includes('active')){
-      setIsNeeded(true);
-      window.$("#alert_tbd").modal("toggle");
-    }
+    
     let subtitle = statusData.sub_title;
     let isCancelBookingAllowed = statusData.cancellation_allowed;
     let call_allowed = statusData.call_allowed;
@@ -806,7 +810,7 @@ const JobCard = (props) => {
                           name="arriving_in"
                           id="hrs"
                         >
-                          {HeroOnTheWayTime.map((heroTime, i) => {
+                          {HeroOnTheWayTime.filter(e=> {return props.booking.category == "future" ? e.id != "tbd" : true} ).map((heroTime, i) => {
                             return (
                               <option value={heroTime.id}>
                                 {heroTime.name}
@@ -872,6 +876,7 @@ const JobCard = (props) => {
             type="button"
             onClick={() => {
               setJobStarted(true);
+              window.isjobStarted = true;
               props.startJob(booking.id);
             }}
             className="theme_btn theme_primary w-100 mb-2"
